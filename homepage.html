@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./stylesheet/style.css" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
+  rel="stylesheet"
+/>
+<html>
+  <body>
+    <!-- Loading Screen code.  -->
+    <div class="active" id="loading-screen">
+      <img id="loading-corner-1" src="./resources/Corner 1.png" />
+      <img id="loading-corner-2" src="./resources/Corner 2.png" />
+      <button id="view-portfolio">View Portfolio</button>
+      <h1 id="loading-title">DESIGN BY JENSEN YOUNG</h1>
+      <h2 id="loading-subtitle">FULL-STACK WEB DEVELOPER</h2>
+      <img id="loading-corner-3" src="./resources/Corner 3.png" />
+      <img id="loading-corner-4" src="./resources/Corner 4.png" />
+      <h3 id="loading-copyrights">copyrights© reserved jensen young 2025</h3>
+    </div>
+
+    <main class="main-screen">
+      <img id="main-corner-1" src="./resources/Corner 1.png" />
+      <img id="main-corner-2" src="./resources/Corner 2.png" />
+
+      <h1 id="main-heading">JENSEN YOUNG / PORTFOLIO</h1>
+      <ul>
+        <li id="home">HOME</li>
+        <li id="projects">PROJECTS</li>
+        <li id="experience">EXPERIENCE</li>
+        <li id="contact">CONTACT</li>
+      </ul>
+
+      <img id="middle-line" src="./resources/Line 1.png" />
+
+      <div class="right-side-text">
+        <!--Home Text -->
+        <p id="home-button-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui
+          quaerat deleniti rem dignissimos tenetur! Illum similique quisquam
+          quibusdam eos dicta in tempora, harum dolore molestiae ipsum facilis
+          excepturi eligendi.
+        </p>
+        <!-- end -->
+
+        <!-- Projects -->
+        <ul id="project-list">
+          <li class="projects" id="project-1">Project Title</li>
+          <li class="projects" id="project-2">Project Title</li>
+          <li class="projects" id="project-3">Project Title</li>
+        </ul>
+        <!-- end -->
+
+        <!-- Experience Text-->
+        <p id="experience-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+          laudantium dolorum. Laudantium enim eligendi sapiente consectetur
+          cupiditate illum ea placeat nihil aspernatur et minima voluptatum,
+          vero repellat. Aut, incidunt inventore.
+        </p>
+        <!-- end -->
+
+        <!-- CONTACT INFO STUFF -->
+        <!-- end -->
+      </div>
+
+      <p id="copyrights">copyrights© reserved jensen young 2025</p>
+      <img id="main-corner-3" src="./resources/Corner 3.png" />
+      <img id="main-corner-4" src="./resources/Corner 4.png" />
+    </main>
+
+    <script type="text/javascript" src="./scripts/main.js"></script>
+    <script>
+      const loadingScreen = document.getElementsByClassName("loading-screen");
+
+      function clearLoadingScreen() {
+        loadingScreen.style.animation = "remove 3s forwards";
+      }
+
+      setTimeout(clearLoadingScreen, 3000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  border: 0;
+}
+
+html {
+  background: linear-gradient(to bottom, #acacac, #bababa);
+}
+
+#loading-screen {
+  display: flex; /* THIS IS TEMP CHANGE TO FLEX WHEN DONE */
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: rgb(32, 32, 32);
+  animation: none;
+}
+
+@keyframes remove {
+  0% {
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+#view-portfolio {
+  position: fixed;
+  bottom: 260px;
+  width: 150px;
+  height: 40px;
+  background: #5e5e5e;
+  color: white;
+  border-radius: 25px;
+  font-family: "Julius Sans One";
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #6bb3cd;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  bottom: -300px;
+  animation: button 0.5s ease forwards;
+}
+
+#view-portfolio:hover {
+  background-color: #6bb3cd;
+  cursor: pointer;
+}
+
+@keyframes button {
+  0% {
+    bottom: -200px;
+  }
+  50% {
+    bottom: 330px;
+  }
+  100% {
+    bottom: 320px;
+  }
+}
+
+#loading-corner-1 {
+  position: absolute;
+  left: 250px;
+  top: 250px;
+}
+
+#loading-corner-2 {
+  position: fixed;
+  right: 250px;
+  top: 250px;
+}
+
+#loading-corner-3 {
+  position: fixed;
+  left: 250px;
+  bottom: 250px;
+}
+
+#loading-corner-4 {
+  position: fixed;
+  right: 250px;
+  bottom: 250px;
+}
+
+#loading-title {
+  position: fixed;
+  color: #fff;
+  font-family: "Julius Sans One";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #6bb3cd;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+  top: 350px;
+}
+
+#loading-subtitle {
+  position: fixed;
+  color: #fff;
+  font-family: "Julius Sans One";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: 440px;
+  color: #fff;
+  font-family: "Julius Sans One";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#loading-copyrights {
+  position: fixed;
+  color: #fff;
+  font-family: "Julius Sans One";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  bottom: 225px;
+}
+
+/* mobile css styles */
+
+@media (max-width: 1200px) {
+  #loading-screen {
+    display: flex;
+  }
+
+  #loading-corner-1 {
+    display: flex;
+    left: 60px;
+  }
+
+  #loading-corner-2 {
+    display: flex;
+    right: 60px;
+  }
+
+  #loading-corner-3 {
+    display: flex;
+    left: 60px;
+  }
+
+  #loading-corner-4 {
+    display: flex;
+    right: 60px;
+  }
+
+  #loading-title {
+    font-size: 52px;
+    top: 380px;
+  }
+
+  #loading-subtitle {
+    font-size: 44px;
+    top: 460px;
+  }
+
+  #loading-copyrights {
+    font-size: 12px;
+    bottom: 235px;
+  }
+
+  #view-portfolio {
+    font-size: 24px;
+    width: 250px;
+    height: 55px;
+    border-radius: 30px;
+  }
+}
+
+/* Main part of the CSS here */
