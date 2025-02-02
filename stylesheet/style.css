@@ -4,11 +4,11 @@
 }
 
 html {
-  background: linear-gradient(to bottom, #acacac, #bababa);
+  background: #acacac;
 }
 
 #loading-screen {
-  display: flex; /* THIS IS TEMP CHANGE TO FLEX WHEN DONE */
+  display: none; /* THIS IS TEMP CHANGE TO FLEX WHEN DONE */
   position: fixed;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,7 @@ html {
   top: 0;
   background: rgb(32, 32, 32);
   animation: none;
+  z-index: 999999;
 }
 
 @keyframes remove {
@@ -30,9 +31,9 @@ html {
 
 #view-portfolio {
   position: fixed;
-  bottom: 260px;
   width: 150px;
   height: 40px;
+  margin-top: 2000px;
   background: #5e5e5e;
   color: white;
   border-radius: 25px;
@@ -45,7 +46,7 @@ html {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
-  bottom: -300px;
+  text-align: center;
   animation: button 0.5s ease forwards;
 }
 
@@ -56,13 +57,13 @@ html {
 
 @keyframes button {
   0% {
-    bottom: -200px;
+    margin-top: 2000px;
   }
   50% {
-    bottom: 330px;
+    margin-top: 255px;
   }
   100% {
-    bottom: 320px;
+    margin-top: 280px;
   }
 }
 
@@ -105,7 +106,7 @@ html {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
-  top: 350px;
+  text-align: center;
 }
 
 #loading-subtitle {
@@ -116,7 +117,8 @@ html {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  top: 440px;
+  text-align: center;
+  margin-top: 165px;
   color: #fff;
   font-family: "Julius Sans One";
   font-size: 48px;
@@ -187,3 +189,147 @@ html {
 }
 
 /* Main part of the CSS here */
+
+.main-screen {
+  display: flexbox;
+  width: 100%;
+  height: 98vh;
+  justify-content: center;
+  align-items: center;
+  background: #acacac;
+  overflow: hidden;
+}
+
+#main-corner-1 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+#main-corner-2 {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+#main-corner-3 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+#main-corner-4 {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+#main-heading {
+  position: absolute;
+  color: #000;
+  font-family: "Julius Sans One";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  top: 50px;
+  left: 100px;
+}
+
+#middle-line {
+  top: 120px;
+  left: 850px;
+  position: absolute;
+}
+
+#list {
+  display: flexbox;
+  width: 70px;
+  margin-top: 300px;
+  margin-left: 60px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  gap: 30px;
+  font-family: "Julius Sans One";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 30px;
+}
+
+.list-text {
+  padding: 10px;
+}
+
+.main-screen button {
+  background: none;
+  display: flexbox;
+  text-decoration: none;
+  list-style-type: none;
+  color: #000;
+  font-family: "Julius Sans One";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.list-text:hover {
+  font-size: 34px;
+  color: #000;
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #ff7575;
+  text-decoration-thickness: 5.5%; /* 2.2px */
+  text-underline-offset: 18.5%; /* 7.4px */
+  text-underline-position: from-font;
+  margin-left: 5px;
+  animation: text-grow 0.3s ease forwards;
+}
+
+/* CLASS THAT IS ADDED TO BUTTON ON PRESS*/
+
+#btnActive {
+  font-size: 34px;
+  color: #000;
+  font-family: "Julius Sans One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #ff7575;
+  text-decoration-thickness: 5.5%; /* 2.2px */
+  text-underline-offset: 18.5%; /* 7.4px */
+  text-underline-position: from-font;
+  margin-left: 5px;
+}
+
+@keyframes text-grow {
+  0% {
+    font-size: 28px;
+  }
+  100% {
+    font-size: 34px;
+  }
+}
+
+.right-side-text {
+  display: none;
+}
+
+#project-list {
+  display: none;
+}
+
+#copyrights {
+  display: none;
+}
