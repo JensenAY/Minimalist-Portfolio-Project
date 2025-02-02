@@ -8,7 +8,7 @@ html {
 }
 
 #loading-screen {
-  display: none; /* THIS IS TEMP CHANGE TO FLEX WHEN DONE */
+  display: flex; /* THIS IS TEMP CHANGE TO FLEX WHEN DONE */
   position: fixed;
   justify-content: center;
   align-items: center;
