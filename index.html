@@ -4,6 +4,10 @@
   href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap"
   rel="stylesheet"
 />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  rel="stylesheet"
+/>
 <html>
   <body>
     <!-- Loading Screen code.  -->
@@ -24,18 +28,10 @@
 
       <h1 id="main-heading">JENSEN YOUNG / PORTFOLIO</h1>
       <ul id="list">
-        <button id="home" class="list-text">
-          <li class="list-text">HOME</li>
-        </button>
-        <button id="projects" class="list-text">
-          <li class="list-text">PROJECTS</li>
-        </button>
-        <button id="experience" class="list-text">
-          <li class="list-text">EXPERIENCE</li>
-        </button>
-        <button id="contact" class="list-text">
-          <li class="list-text">CONTACT</li>
-        </button>
+        <li id="home" class="list-text">HOME</li>
+        <li id="projects" class="list-text">PROJECTS</li>
+        <li id="experience" class="list-text">EXPERIENCE</li>
+        <li id="contact" class="list-text">CONTACT</li>
       </ul>
 
       <img id="middle-line" src="./resources/Line 1.png" />
@@ -43,10 +39,35 @@
       <div class="right-side-text">
         <!--Home Text -->
         <p id="home-button-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore qui
-          quaerat deleniti rem dignissimos tenetur! Illum similique quisquam
-          quibusdam eos dicta in tempora, harum dolore molestiae ipsum facilis
-          excepturi eligendi.
+          Hi, I’m Jensen Young. I’m an 18-year-old full-stack web developer with
+          a passion for building modern, responsive web applications. I
+          specialize in both front-end and back-end technologies, creating
+          seamless user experiences and robust functionality. My interest in
+          coding started early, and I've been dedicated to refining my skills
+          ever since.
+          <br />
+          <br />
+          I earned my GED in October 2024, opting out of the traditional school
+          system. From what I’ve heard from friends, the school system isn’t
+          always as effective as people make it out to be. Instead, I found that
+          taking control of my own education allowed me to explore topics more
+          deeply and at my own pace.
+          <br />
+          <br />
+          I primarily study online using resources like
+          <a href="https://www.codecademy.com/" target="_blank">Codecademy</a>,
+          where I’ve built a strong foundation in web development. This
+          self-driven approach has taught me not just coding languages, but also
+          how to tackle challenges, stay curious, and continuously evolve as a
+          developer. I believe that self-learning is a critical skill,
+          especially in the fast-paced world of technology.
+          <br />
+          <br />
+          Outside of coding, I’m always looking for new projects and
+          opportunities to grow. Whether it's collaborating with others or
+          working on personal projects, I’m passionate about pushing the
+          boundaries of what I can create. I’m excited to continue developing my
+          skills and contributing to innovative web solutions.
         </p>
         <!-- end -->
 
@@ -74,6 +95,16 @@
         <!-- end -->
 
         <!-- CONTACT INFO STUFF -->
+        <div id="contact-me">
+          <h2>EMAIL ADDRESS</h2>
+          <h3>JensenAY6@gmail.com</h3>
+
+          <h2>PHONE NUMBER</h2>
+          <h3>+27 78 032 7114</h3>
+
+          <h2>TIME ZONES</h2>
+          <h3>GMT+2 Available from 8:30 AM - 6:00 PM</h3>
+        </div>
         <!-- end -->
       </div>
 
@@ -83,14 +114,5 @@
     </main>
 
     <script type="text/javascript" src="./scripts/main.js"></script>
-    <script>
-      const loadingScreen = document.getElementsByClassName("loading-screen");
-
-      function clearLoadingScreen() {
-        loadingScreen.style.animation = "remove 3s forwards";
-      }
-
-      setTimeout(clearLoadingScreen, 3000);
-    </script>
   </body>
 </html>
